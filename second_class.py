@@ -93,7 +93,7 @@
 
 # else if => Python elif
 
-# is_student = False
+#" is_student = False
 # is_mentor = True
 # is_ta = False
 
@@ -103,7 +103,7 @@
 # elif is_mentor:
 #     role = "mentor"
 # elif is_ta:
-#     role = "ta"
+#     role = "ta""
 
 # print(role)
 
@@ -116,3 +116,135 @@
 # has_license = True
 # can_drive = (age >= 18 and has_license) or not has_license
 # print(can_drive)
+
+# Conditional Statements
+# age = int(input())
+
+# if age >= 18:
+#   print("Can Drive")
+
+# print("Hello everyone") # not part of the if condition.
+
+#indentation
+
+
+# temperature = 12
+# is_sunny = True
+# is_weekend = True
+
+# if temperature >= 20 and is_sunny and is_weekend:
+#     print("Perfect Day")
+# else:
+#     print("Not a Perfect Day")
+
+# if-else
+
+# is_student = False
+# is_mentor = False
+# is_ta = False
+
+# role = ""
+# if(is_student):
+#     role = "student"
+# elif is_mentor:
+#     role = "mentor"
+# elif is_ta:
+#     role = "ta"
+# else:
+#     role = "guest"
+
+# if is_student:
+#     role = "student"
+
+# if is_mentor:
+#     role = "mentor"
+
+# if is_ta:
+#     role = "ta"
+
+# print(role)
+
+# score = 50
+
+# if score >= 90:
+#     print("Excellent")
+# elif score >= 60:
+#     print("Pass")
+# else:
+#     print("Fail")
+
+# Short-Circuit Evaluation : Python evaluates logical operators left to right and stops as soon as the result is determined.
+
+# Else -  used to provide default behaviour.
+
+# age = int(input())
+# ticket_price = 0
+
+# if age < 10:
+#     ticket_price = 20
+# elif age < 20:
+#     ticket_price = 30
+# elif age < 30:
+#     ticket_price = 40
+# elif age < 40:
+#     ticket_price = 50
+# else:
+#     ticket_price = 60
+
+# print(ticket_price)
+
+# Nested if-else conditions.
+
+# username = "deepak"
+# password = "lks"
+
+# if len(username) >= 5 and len(password) >= 5:
+#     if username == "deepak":
+#         if password == "masai":
+#             print("Correct password for deepak")
+#         else:
+#             print("Wrong password for deepak")
+#     else:
+#         print("Some other user than deepak")
+# else:
+#     print("username and password should have min length of 5.")
+
+bill_amount = 1200
+is_member = True
+has_coupon = True
+
+# print(f"The bill amount is {bill_amount}") # f - formatted string - to use variables inside a string.
+
+# if bill_amount >= 1000:
+#     discount = 10
+#     if is_member:
+#         discount += 5
+#     if has_coupon:
+#         discount += 5
+#     print(discount)
+# else:
+#     print("No discsout on shopping less that 1000")
+
+# num1 = 100
+# num2 = 16
+
+# print(f"num1 multiplied by num2 {num1 * num2}")
+
+# Number Formatting
+# pi = 3.14158347836487
+# print(f"pi value: {pi:.2f}")
+# print(f"pi value: {pi:.4f}")
+# print(f"pi value: {pi:.6f}")
+
+# number = 100
+# print(number)
+# print(f"{number:5}")
+
+big_number = 100000
+print(f"{big_number:,}")
+
+# Thousands separator
+# 100,000
+# 10,00,000
+
+# 10,00,000
