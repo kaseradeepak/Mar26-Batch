@@ -176,3 +176,12 @@ from functions import *
 # show_entire_content()
 
 # print(calculate('*', 'masai', 10))
+
+# x = fun1()
+# y = fun2()
+
+# print(add(fun1(), fun2()))
+
+add_item('Mouse')
+
+add_item('Laptop')

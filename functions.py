@@ -54,7 +54,7 @@ def show_entire_content():
 # function without parameters can only do one specific thing with hardcoded values.
 
 # x: int => Type Hinting
-def calculate(x: int, y: int, oprn: str):
+def calculate(x: int, y: int, oprn: str = "+"): # oprn - default value is +
     if oprn == '+':
         return x + y
     elif oprn == '-':
@@ -63,5 +63,90 @@ def calculate(x: int, y: int, oprn: str):
         return x * y
     elif oprn == '/':
         return x / y
+    else:
+        raise TypeError(f"{oprn} operation is not supported.")
 
+# Parameter vs Argument
+
+def say_hello(name: str): # parameter - name
+    print(f"Hello {name}")
+
+# say_hello("Ravneet") # argument - "Ravneet"
+
+# Parameter - Variable in function definition.
+# Argument - actual value passed at the time of calling the function.
+
+# calculate(10, 2, '&')
+
+# Order matters in function parameters.
+# def introduce(name: str, age: int):
+#     if type(name) != str or type(age) != int:
+#         raise TypeError('Please pass name as string and age as integer')
+#     print(f"My name is {name} and age is {age}")
+    
+
+# introduce(30, 'Deepak')
+
+# Multiple parameters: separated by comma.
+
+# Return Values from function
+# return statement is used to return some value from the function
+
+# def fun():
+#     return 10 # return statement means function termination.
+#     print("Hello World")
+
+# print(fun() + 13)
+
+# return vs print
+# print() => prints on the console, no return value.
+# return => sends some value back to caller
+
+# Return value enables the composition.
+
+# def fun1():
+#     return 10
+
+# def fun2():
+#     return 2
+
+# def add(x, y):
+#     return x / y
+
+# function1(function2(function3(function4()))) function composition
+
+# function1 -> function2 -> function3 -> function4
+
+# Can we have multiple return statements inside a function ? YES
+
+# def fun():
+#     return 10
+#     return 20 # orphan
+
+# print(fun())
+
+# return - sends some value back to the caller, it stops the execution immediately.
+
+# Default parameters.
+
+# print(calculate(10, 2, '/'))
+
+def create_user(name, age, role="student", address="India"):
+    print(f"name: {name}, age: {age}, role: {role}, address: {address}")
+
+# create_user("Deepak", 30, "Mentor")
+
+def add_item(item, items = None): # Mutable default - Bad approach 
+    if items == None:
+        items = []
+    items.append(item)
+    print(items)
+
+add_item('Keyboard')
+
+add_item('Mouse')
+
+add_item('Laptop')
+
+add_item('Camera')
 
