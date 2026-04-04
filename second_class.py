@@ -248,3 +248,9 @@ print(f"{big_number:,}")
 # 10,00,000
 
 # 10,00,000
+
+# from functions import *
+
+# show_header()
+# show_content()
+# show_footer()

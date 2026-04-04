@@ -164,3 +164,15 @@
 
 # Project-1 : XYZ library, version : 4.2
 # Project-2 : XYZ library, version : 4.9
+
+from functions import *
+
+# say_hello()
+
+# say_bye()
+
+# say_hi()
+
+# show_entire_content()
+
+# print(calculate('*', 'masai', 10))
